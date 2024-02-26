@@ -12,10 +12,6 @@ export const TransactionList = () => {
         <h3> History</h3>
         <ul id='list' className='list'>
             {transactions.map(transaction =>(<Transaction key={transaction.id} transaction={transaction}/>))}
-            <li className='minus'>
-                Cash<span>-$400</span>
-                <button className='delete-btn'>x</button>
-            </li>
         </ul>
     </div>
   )
